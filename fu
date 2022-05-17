@@ -1,0 +1,28 @@
+include <stdio.h>
+#include <stdlib.h>
+
+int acharmaior( int x, int macro[x]){
+int i,maior;
+maior = 0;
+  for(i = 0; i < x; x++){
+      if( maior < macro[i] ){
+        maior = macro[i];
+      }
+
+  }
+   return maior;
+}
+void main()
+{
+int maior,i, y,x, macro[x];
+    printf(" digite o tamanho do vetor :"); scanf("%i", &x);
+    for(i = 0; i < x; i++){
+        printf("\n digite os valores do vetor : \n");
+        scanf( "%i", &macro[i]);
+    }
+    maior = acharmaior(x, macro[x]);
+    printf(" o maior elemento do vetor vale %i", maior);
+
+
+
+}
